@@ -14,4 +14,9 @@
     <string name="event">Event</string>
     <string name="news_example">This is an example of news</string>
     <string name="event_example" />
+
+    <!--    HX-->
+    <string name="recyclable_item_list_title">Recyclable items:</string>
+    <string name="recyclable_item_name">Recyclable Item Name</string>
+    <string name="recyclable_item_image">Recyclable Item Image</string>
 </resources>

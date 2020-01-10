@@ -9,8 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.android.homepage.R
+import com.google.firebase.database.ChildEventListener
+import com.google.firebase.database.DatabaseReference
 
 class HomeFragment : Fragment() {
+
 
     private lateinit var homeViewModel: HomeViewModel
 
@@ -25,6 +28,7 @@ class HomeFragment : Fragment() {
         val textView: TextView = root.findViewById(R.id.text_home)
         homeViewModel.text.observe(this, Observer {
             textView.text = it
+            
         })
         return root
     }

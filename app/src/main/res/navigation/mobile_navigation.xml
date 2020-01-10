@@ -27,7 +27,13 @@
         android:id="@+id/navigation_information_centre"
         android:name="com.example.android.homepage.ui.information_centre.InformationCentreFragment"
         android:label="@string/title_information_centre"
-        tools:layout="@layout/fragment_information_centre" />
+        tools:layout="@layout/fragment_information_centre" >
+        <action
+            android:id="@+id/action_navigation_information_centre_to_displayItemInfoActivity"
+            app:destination="@+id/displayItemInfoActivity"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_news_and_event"
