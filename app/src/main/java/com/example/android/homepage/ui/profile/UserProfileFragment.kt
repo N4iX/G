@@ -155,7 +155,7 @@ class UserProfileFragment : Fragment() {
         val userAddress: String = editTextOrganisationAddress.text.toString()
         val userEmail: String = editTextProfileEmail.text.toString()
         val userContactNo: String= editTextOrganisationContactNo.text.toString()
-        val userProfilePicture: String = "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjSjqyHtf3mAhVrxDgGHdwCByoQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F521995413059056104%2F&psig=AOvVaw1chZfUAzbKlR34KCY1y4mM&ust=1578896257966983"
+        val userProfilePicture: String = "https://i.imgur.com/1PAiTuL.jpg"
         val user = User(username
             , userEmail
             , userContactNo
