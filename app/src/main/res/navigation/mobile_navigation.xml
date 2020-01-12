@@ -40,12 +40,7 @@
             app:destination="@+id/displayItemInfoFragment"
             app:launchSingleTop="false" />
     </fragment>
-
-    <fragment
-        android:id="@+id/navigation_news_and_event"
-        android:name="com.example.android.homepage.ui.news_and_event.NewsAndEventFragment"
-        android:label="@string/title_news_and_event"
-        tools:layout="@layout/fragment_news_and_event" />
+    
     <fragment
         android:id="@+id/displayItemInfoFragment"
         android:name="com.example.android.homepage.ui.information_centre.DisplayItemInfoFragment"
@@ -71,4 +66,129 @@
         android:id="@+id/userProfileFragment"
         android:name="com.example.android.homepage.ui.profile.UserProfileFragment"
         android:label="Profile Details" />
+    
+    <fragment
+        android:id="@+id/navigation_news_and_event"
+        android:name="com.example.android.homepage.ui.news_and_event.NewsAndEventFragment"
+        android:label="@string/title_news_and_event"
+        tools:layout="@layout/fragment_news_and_event" >
+        <action
+            android:id="@+id/action_navigation_news_and_event_to_fragmentNews"
+            app:destination="@id/fragmentNews" />
+        <action
+            android:id="@+id/action_navigation_news_and_event_to_fragmentEvent"
+            app:destination="@id/fragmentEvent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNewsFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageNews.AddNewsFragment"
+        android:label="Add News"
+        tools:layout="@layout/fragment_add_news">
+        <action
+            android:id="@+id/action_addNewsFragment_to_fragmentNews"
+            app:destination="@id/fragmentNews" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEventFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageEvent.AddEventFragment"
+        android:label="Add Event"
+        tools:layout="@layout/fragment_add_event" >
+        <action
+            android:id="@+id/action_addEventFragment_to_fragmentEvent"
+            app:destination="@id/fragmentEvent" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.example.android.homepage.ui.news_and_event.FragmentNews"
+        android:label="News"
+        tools:layout="@layout/fragment_fragment_news" >
+        <action
+            android:id="@+id/action_fragmentNews_to_addNewsFragment"
+            app:destination="@id/addNewsFragment" />
+        <action
+            android:id="@+id/action_fragmentNews_to_editNewsRVFragment"
+            app:destination="@id/editNewsRVFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEvent"
+        android:name="com.example.android.homepage.ui.news_and_event.FragmentEvent"
+        android:label="Event"
+        tools:layout="@layout/fragment_fragment_event" >
+        <action
+            android:id="@+id/action_fragmentEvent_to_addEventFragment"
+            app:destination="@id/addEventFragment" />
+        <action
+            android:id="@+id/action_fragmentEvent_to_editEventRVFragment"
+            app:destination="@id/editEventRVFragment" />
+        <action
+            android:id="@+id/action_fragmentEvent_to_navigation_news_and_event"
+            app:destination="@id/navigation_news_and_event" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNewsRVFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageNews.EditNewsRVFragment"
+        android:label="Select a news to edit"
+        tools:layout="@layout/fragment_edit_news_rv" >
+        <action
+            android:id="@+id/action_editNewsRVFragment_to_editNewsFragment"
+            app:destination="@id/editNewsFragment" />
+        <action
+            android:id="@+id/action_editNewsRVFragment_to_fragmentNews"
+            app:destination="@id/fragmentNews" />
+    </fragment>
+    <fragment
+        android:id="@+id/editEventRVFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageEvent.EditEventRVFragment"
+        android:label="Select an event to edit"
+        tools:layout="@layout/fragment_edit_event_rv" >
+        <action
+            android:id="@+id/action_editEventRVFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+        <action
+            android:id="@+id/action_editEventRVFragment_to_fragmentEvent"
+            app:destination="@id/fragmentEvent" />
+    </fragment>
+    <fragment
+        android:id="@+id/editEventFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageEvent.EditEventFragment"
+        android:label="Edit Event"
+        tools:layout="@layout/fragment_edit_event" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="dataKey"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editEventFragment_to_editEventRVFragment"
+            app:destination="@id/editEventRVFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNewsFragment"
+        android:name="com.example.android.homepage.ui.news_and_event.ManageNews.EditNewsFragment"
+        android:label="Edit News"
+        tools:layout="@layout/fragment_edit_news" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="link"
+            app:argType="string" />
+        <argument
+            android:name="dataKey"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_editNewsFragment_to_editNewsRVFragment"
+            app:destination="@id/editNewsRVFragment" />
+    </fragment>
 </navigation>
