@@ -2,38 +2,16 @@ package com.example.android.homepage
 
 import android.net.Uri
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.android.homepage.R.id.container
-import com.example.android.homepage.R.id.navigation_location
-import com.example.android.homepage.ui.information_centre.DisplayItemInfoActivity
 import com.example.android.homepage.ui.information_centre.InformationCentreFragment
-import com.example.android.homepage.ui.information_centre.RecyclableItem
-import com.example.android.homepage.ui.information_centre.RecyclableItemViewHolder
-import com.google.firebase.database.ChildEventListener
-import com.google.firebase.database.DatabaseReference
-import com.firebase.ui.database.FirebaseRecyclerAdapter
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), InformationCentreFragment.OnFragmentInteractionListener {
-
-    private val TAG = "MainActivity"
-    private val REQUIRED = "Required"
-    //access database table
-    private var recyclableItemDatabase: DatabaseReference? = null
-    //to get the current database pointer
-    private var recyclableItemReference: DatabaseReference? = null
-    private var recyclableItemListener: ChildEventListener? = null
-
-    //no need
-    private var recyclableItemAdapter: FirebaseRecyclerAdapter<RecyclableItem, RecyclableItemViewHolder>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -9,7 +9,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class InformationCentreViewModel(application: Application) : AndroidViewModel(application) {
+class RecyclableItemViewModel(application: Application) : AndroidViewModel(application) {
 
     val recyclableItemList: MutableLiveData<List<RecyclableItem>> = MutableLiveData()
     val database = FirebaseDatabase.getInstance()
