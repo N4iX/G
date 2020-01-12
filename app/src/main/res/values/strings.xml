@@ -50,4 +50,34 @@
     <string name="Edit">Edit</string>
     <string name="go_profile_details">Profile Details</string>
     <string name="go_logout">Logout</string>
+    
+    //NEWS AND EVENT
+     <string name="news">News</string>
+    <string name="event">Event</string>
+    <string name="news_example">This is an example of news</string>
+    <string name="event_example" />
+    <string name="title_activity_news_and_event">NewsAndEvent</string>
+    <string name="add_news">Add News</string>
+    <string name="add_event">Add Event</string>
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_title">Your Title</string>
+    <string name="add_link">Paste your link here</string>
+    <string name="required">Required</string>
+    <string name="date">Date of Event: </string>
+    <string name="channel_name">Notification Channel</string>
+    <string name="event_image">Event</string>
+    <string name="add_description">Enter your description here</string>
+    <string name="date_format">31.12.19</string>
+    <string name="description">Descrption:</string>
+    <string name="title">Title</string>
+    <string name="edit_news">Edit News</string>
+    <string name="delete_news">Delete news</string>
+    <string name="delete_event">Delete event</string>
+    <string name="edit_event">Edit event</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="delete_confirmation">Are you sure you want to delete?</string>
+    <string name="update_confirmation">Are you sure you want to update?</string>
 </resources>
