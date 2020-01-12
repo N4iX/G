@@ -9,9 +9,12 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.android.homepage.ui.information_centre.InformationCentreFragment
+import com.example.android.homepage.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity(), InformationCentreFragment.OnFragmentInteractionListener {
+class MainActivity : AppCompatActivity(),
+    InformationCentreFragment.OnFragmentInteractionListener,
+    ProfileFragment.OnFragmentInteractionListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

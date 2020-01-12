@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HomePage</string>
+    <string name="app_name">Green Urth</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -26,4 +26,28 @@
     <string name="aluminium_cans">Aluminium cans</string>
     <string name="juice_and_milk_cartons">Juice and milk cartons</string>
 
+    //PROFILE
+    //Login Page Strings
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    //Registration strings
+    <string name="register_password">Enter Password:</string>
+    <string name="register_email">Enter Email Address:</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset_password_via_mail">Enter registered email address to reset password</string>
+
+    //Profile Strings
+    <string name="organisationName">Organisation</string>
+    <string name="address">Address</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="orgContactNo">Contact No</string>
+    <string name="Save">Save</string>
+    <string name="Edit">Edit</string>
+    <string name="go_profile_details">Profile Details</string>
+    <string name="go_logout">Logout</string>
 </resources>

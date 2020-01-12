@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.information_centre.DisplayItemInfoActivity"
-            android:launchMode="singleTop"
+        <activity android:name=".ui.profile.ProfileActivity"
             android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ui.profile.RegistrationActivity"
+            android:parentActivityName=".ui.profile.ProfileActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
