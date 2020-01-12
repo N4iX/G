@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.android.homepage.R
 import com.firebase.ui.database.ChangeEventListener
 import com.firebase.ui.database.FirebaseRecyclerAdapter
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_fragment_news.*
 
@@ -120,7 +121,12 @@ class FragmentNews : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setHasOptionsMenu(true)
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            setHasOptionsMenu(true)
+        } else {
+            setHasOptionsMenu(false)
+        }
     }
 
     //inflate the menu

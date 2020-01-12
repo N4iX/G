@@ -8,7 +8,7 @@
     <string name="title_information_centre">Information Centre</string>
     <string name="title_news_and_event">News and Event</string>
 
-    <!--    HX-->
+    //Information Centre
     <string name="recyclable_item_list_title">Recyclable items:</string>
     <string name="recyclable_item_name">Recyclable Item Name</string>
     <string name="recyclable_item_image">Recyclable Item Image</string>
@@ -18,7 +18,8 @@
     <string name="glass">Glass</string>
     <string name="aluminium_cans">Aluminium cans</string>
     <string name="juice_and_milk_cartons">Juice and milk cartons</string>
-    <string name="edit_info">Edit Info</string>
+    <string name="add_info">Add Info</string>
+    <string name="edit_or_delete_info">Edit/Delete Info</string>
 
     //PROFILE
     //Login Page Strings
