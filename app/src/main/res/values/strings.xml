@@ -19,4 +19,11 @@
     <string name="recyclable_item_list_title">Recyclable items:</string>
     <string name="recyclable_item_name">Recyclable Item Name</string>
     <string name="recyclable_item_image">Recyclable Item Image</string>
+    <string name="paper">Paper</string>
+    <string name="plastic">Plastic</string>
+    <string name="cardboard">Cardboard</string>
+    <string name="glass">Glass</string>
+    <string name="aluminium_cans">Aluminium cans</string>
+    <string name="juice_and_milk_cartons">Juice and milk cartons</string>
+
 </resources>

@@ -29,10 +29,9 @@
         android:label="@string/title_information_centre"
         tools:layout="@layout/fragment_information_centre" >
         <action
-            android:id="@+id/action_navigation_information_centre_to_displayItemInfoActivity"
-            app:destination="@+id/displayItemInfoActivity"
-            app:launchSingleTop="false"
-            app:popUpToInclusive="false" />
+            android:id="@+id/action_navigation_information_centre_to_displayItemInfoFragment"
+            app:destination="@+id/displayItemInfoFragment"
+            app:launchSingleTop="false" />
     </fragment>
 
     <fragment
@@ -40,4 +39,16 @@
         android:name="com.example.android.homepage.ui.news_and_event.NewsAndEventFragment"
         android:label="@string/title_news_and_event"
         tools:layout="@layout/fragment_news_and_event" />
+    <fragment
+        android:id="@+id/displayItemInfoFragment"
+        android:name="com.example.android.homepage.ui.information_centre.DisplayItemInfoFragment"
+        android:label="fragment_display_item_info"
+        tools:layout="@layout/fragment_display_item_info" >
+        <argument
+            android:name="itemName"
+            app:argType="string" />
+        <argument
+            android:name="itemInfoLink"
+            app:argType="string" />
+    </fragment>
 </navigation>
