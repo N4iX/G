@@ -9,12 +9,16 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.android.homepage.ui.information_centre.InformationCentreFragment
+import com.example.android.homepage.ui.news_and_event.ManageEvent.EditEventRVFragment
+import com.example.android.homepage.ui.news_and_event.ManageNews.EditNewsRVFragment
 import com.example.android.homepage.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(),
     InformationCentreFragment.OnFragmentInteractionListener,
-    ProfileFragment.OnFragmentInteractionListener{
+    ProfileFragment.OnFragmentInteractionListener,
+    EditNewsRVFragment.OnFragmentInteractionListener,
+    EditEventRVFragment.OnFragmentInteractionListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
